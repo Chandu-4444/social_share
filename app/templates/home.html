@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load social_share %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Me!</title>
+</head>
+{% post_to_facebook data "Post to Facebook!" %}
+{% post_to_whatsapp  data "Share To WA" %}
+{% post_to_reddit  data "Share To Reddit" %}
+
+<body>
+
+</body>
+
+</html>
