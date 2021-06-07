@@ -39,6 +39,12 @@
     <button class="btn btn-primary"><span
             class="fab fa-reddit-alien">{% post_to_reddit  data "Share To Reddit" %}</span></button>
     <br>
+    <hr>
+    {% for post in posts %}
+    <h2>{{post.title}}</h2>
+    <br>
+    <h5>{{post.content}}</h5>
+    {% endfor %}
 
 
 
