@@ -7,12 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share Me!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            margin: 30px;
+        }
+
+        a {
+            color: white !important;
+            display: inline;
+        }
+
+        span div {
+            display: inline;
+        }
+    </style>
 </head>
-{% post_to_facebook data "Post to Facebook!" %}
-{% post_to_whatsapp  data "Share To WA" %}
-{% post_to_reddit  data "Share To Reddit" %}
 
 <body>
+    <button class="btn btn-primary"><span
+            class="fab fa-facebook">{% post_to_facebook data "Post to Facebook!" %}</span></button>
+    <br>
+    <button class="btn btn-primary"><span
+            class="fab fa-whatsapp">{% post_to_whatsapp  data "Share To WA" %}</span></button>
+    <br>
+    <button class="btn btn-primary"><span
+            class="fab fa-reddit-alien">{% post_to_reddit  data "Share To Reddit" %}</span></button>
+    <br>
+
+
 
 </body>
 
